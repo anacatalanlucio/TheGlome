@@ -1,0 +1,355 @@
+.logo{
+	width:30px;
+	height: 30px;
+}
+
+body{
+    background-color: white;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#index{
+	background-image: url("Tokyo/IMG_20170919_175109.jpg");
+    height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.landingPage {
+	outline: none;
+	background: transparent;
+	font-size:30px;
+	border:none;
+	cursor: pointer;
+}
+.dropdown {
+  display: inline-block;
+}
+.landingPage a{
+	color: black;
+	text-decoration: none;
+}
+
+#mybtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline:none;
+  background-color:transparent;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+.modal-content{
+  text-align: center;
+  margin: auto;
+  color: white;
+  width: 10%;
+}
+
+.modal-content a {
+    font-weight:lighter;
+    font-size: 25px;
+    color:  white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.modal-content a:hover{
+	color: grey;
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.intro a {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.intro a {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+div{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100px;
+}
+
+div a{
+	font-size: 20px;
+	text-decoration: none;
+	color:grey;
+}
+
+.whiteFooter{
+	color: black;
+	width: 100%;
+    bottom: 0;
+	font-size: 15px;
+    position: fixed;
+	text-align: right;
+	font-family: "Lucida Sans Unicode",sans-serif;
+}
+
+#indexFooter{
+	color:white;
+}
+
+.icons{
+    text-align: center;
+	margin: 5px;
+	margin-bottom: 30px;
+}
+
+.icon1 a:hover{
+	color: black;
+}
+
+.icon2 a:hover{
+	color: black;
+}
+
+.icon3 a:hover{
+	color: black;
+}
+.icon4 a:hover{
+    color: black;
+}
+
+.icon1,.icon2,.icon3,.icon4{
+	padding: 20px;
+}
+
+.picturesRow{
+	justify-content: center;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 30%;
+  padding: 10px 10px;
+}
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.column img:hover {
+	cursor: pointer;
+  transform: scale(1.05);
+
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content2, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 30px;
+	font-family: "raleway", sans-serif;
+	color: black;
+
+}
+
+
+.bookRow{
+	text-align: center;
+	display: inline;
+	white-space: pre-line;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+}
+
+
+span{
+    cursor: pointer;
+	color: grey;
+	font-size:20px;
+    font-family: "raleway", sans-serif;
+}
+
+span:hover{
+	color: black;
+}
+
+
+.movie{
+	padding: 10px;
+	width: 300px;
+
+}
+
+.movie:hover{
+	cursor: pointer;
+
+}
+
+.movieRow{
+	text-align: center;
+	display: inline;
+	white-space: pre-line;
+	margin-top: 20px;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+}
+
+
+#ana {
+  position: relative;
+}
+
+#helloyou{
+  position: relative;
+  left: 25%;
+  margin-bottom: 40%;
+  font-size: 20px;
+  padding: 20px;
+  width: 600px;
+  -ms-flex: 40%;
+  flex: 40%;
+  max-width: 40%;
+}
+
+#signature{
+	font-size: 30px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+}

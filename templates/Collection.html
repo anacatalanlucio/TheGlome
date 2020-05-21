@@ -1,0 +1,96 @@
+{% extends "WhiteIndex.html" %}
+
+{% block title %}{{ super() }} - Collection{% endblock %}
+
+{% block content %}
+<h1>The Colletion</h1>
+		<div class="picturesRow">
+			<div class="column">
+				<img class="testImg" src="static/China/DSC01990 (2).jpg" alt="Downtown Shanghai, China">
+				<img class="testImg" src="static/Tokyo/IMG_20170924_204844.jpg" alt="Tokyo, Japan">
+				<img class="testImg" src="static/China/DSC01580.jpg" alt=" Chengdu, China">
+				<img class="testImg" src="static/China/DSC00753(1).jpg" alt="Great Wall of China, Winter">
+				<img class="testImg" src="static/China/DSC02633.jpg" alt="Grat Wall of China, Summer" >
+				<img class="testImg" src="static/China/DSC01991 (1).jpg" alt="Downtown Shanghai, China">
+				<img class="testImg" src="static/China/DSC01713-1.jpg" alt=" Xinjin Village, China">
+				<img class="testImg" src="static/China/DSC01402 (1).jpg" alt="Zhangjiajie, China">
+				<img class="testImg" src="static/China/DSC01808-1.jpg" alt="Downtown Shanghai, China">
+				<img class="testImg" src="static/Thailand/IMG_20171013_152926.png" alt="The Lady in Red. Bangkok" >
+				<img class="testImg" src="static/Thailand/IMG_20171005_112728.jpg" alt="Phuket, Thailand" >
+				<img class="testImg" src="static/Thailand/IMG_20171013_142636.jpg" alt="Chinatown, Thailand">
+				<img class="testImg" src="static/Thailand/IMG_20171011_172109.jpg" alt="Religious Felidae, Bangkok">
+				<img class="testImg" src="static/Tokyo/IMG_20170923_152941.jpg" alt="Omote-sandō, Tokyo" >
+				<img class="testImg" src="static/China/DSC01467.jpg" alt="Flower">
+				<img class="testImg" src="static/Thailand/IMG_20171010_151952.jpg" alt="The void">
+				<img class="testImg" src="static/Hong Kong/IMG_20171016_191142.jpg" alt="Mysterious nights in Hong Kong">
+
+			</div>
+
+			<div class="column">
+				<img class="testImg" src="static/Hong Kong/IMG_20171016_181343.jpg" alt="Sunset, Wine and Oranges. Hong Kong">
+				<img class="testImg" src="static/Hong Kong/IMG_20171017_135450.jpg" alt="Victoria Peak, Hong Kong">
+				<img class="testImg" src="static/Hong Kong/IMG_20171017_164839.jpg" alt="Warm Spot between Concrete Walls. Financial District, Hong Kong.">
+				<img class="testImg" src="static/Hong Kong/IMG_20171019_173541.jpg" alt="Dinner on top of a mountain. Hong Kong" >
+				<img class="testImg" src="static/Hong Kong/IMG_20170918_060331.jpg" alt="Pink Towers, Hong Kong " >
+				<img class="testImg" src="static/Hong Kong/IMG_20170917_232434.jpg" alt= "Endless Buildings.  Kowloon, Hong Kong" >
+				<img class="testImg" src="static/Thailand/IMG_20171002_170821.jpg" alt="Phuket, Thailand">
+				<img class="testImg" src="static/Thailand/IMG_20171005_123346.jpg" alt="Beach Bum, Phuket">
+				<img class="testImg" src="static/Thailand/IMG_20171011_125639.jpg" alt="Buddhist Temple, Bangkok">
+				<img class="testImg" src="static/Thailand/IMG_20171009_180001.jpg" alt="City of Lights. Hong Kong" >
+				<img class="testImg" src="static/Hong Kong/IMG_20171018_192817.jpg"  alt="Sunset in Phuket">
+				<img class="testImg" src="static/China/IMG_0429.jpg" alt="The sun sets in Mongolia. Great Wall of China" >
+				<img class="testImg" src="static/China/DSC02465.jpg" alt="Beijing" >
+				<img class="testImg" src="static/China/DSC01574.jpg" alt="Photobombing panda having dinner. Chengdu, China">
+				<img  class="testImg" src="static/Tokyo/IMG_20170920_131731.jpg" alt="Sky Lanterns. Miraikan Museum, Tokyo, Japan" >
+
+			</div>
+
+			<div class="column">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_191951.jpg" alt="Electric Flowers. Singapore">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_113844.jpg" alt="Artificial Intelligence @ArtScience Museum. Singapore" >
+				<img  class="testImg" src="static/Singapore/IMG_20170928_144802.jpg" alt="Cloud Forest. Singapore">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_190025.jpg"  alt="Bioluminescence. Marina Bay Sands, Singapore">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_194524.jpg" alt="Cracked Egg - Night version. Singapore" >
+				<img  class="testImg" src="static/Singapore/IMG_20170930_162439.jpg" alt="Sustainable Architecture. Downtown Singapore">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_145738.jpg" alt="Could Forest. Singapore">
+				<img  class="testImg" src="static/Singapore/IMG_20170928_111251.jpg" alt="Same Cracked Egg - Day version. Singapore" >
+				<img  class="testImg" src="static/Tokyo/IMG_20170919_175109.jpg" alt="Nights in Shibuya. Tokyo, Japan">
+				<img  class="testImg" src="static/Tokyo/IMG_20170919_181432.jpg" alt="Beehive. Tokyo">
+				<img  class="testImg" src="static/Tokyo/IMG_20170921_190935.jpg" alt="Shibuya Crossing, Tokyo">
+				<img  class="testImg" src="static/Tokyo/IMG_20170923_121656.jpg" alt="Street Feng Shui. Tokyo">
+				<img class="testImg" src="static/Hong Kong/IMG_20171018_192720.jpg" alt="Bitter-Sweet City">
+				<img class="testImg" src="static/China/DSC02630.jpg" alt="Walk with me. ">
+				<img class="testImg" src="static/China/DSC01700-1.jpg" alt="Hunan, China">
+
+
+			</div>
+		</div>
+		<div id="myModal2" class="modal2">
+		  <span class="close2">&times;</span>
+		  <img class="modal-content2" id="img01">
+		  <div id="caption"></div>
+		</div>
+
+		<script>
+			var modal2 = document.getElementById("myModal2");
+			var img = document.getElementById("myImg");
+			var imgs = document.getElementsByClassName("testImg");
+			var captionText = document.getElementById("caption");
+
+			for (i of imgs)
+			{
+				i.onclick = function(){
+				  modal2.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+			}
+
+			var modalImg = document.getElementById("img01");
+			var span = document.getElementsByClassName("close2")[0];
+			span.onclick = function() {
+				  modal2.style.display = "none";
+				}
+		</script>
+
+{%  endblock %}

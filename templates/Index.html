@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title> {% block title %} THEGLOME {%  endblock %}</title>
+        <link rel="icon" type="image/png" href="static/Pictures/logo.png"/>
+        <link href="static/Main.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+    .button a {
+        text-decoration: none;
+    }
+    *,*:before,*:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #index {
+      text-align: center;
+    }
+
+    p{
+      font-size: 1.6em;
+      background-color: #fff;
+      padding: 1em;
+      color: #002240;
+      margin-top: 0;
+    }
+
+    /* .button */
+
+    .button {
+        display: inline-block;
+        position: relative;
+        margin: 1em;
+        padding: 0.67em;
+        border: 2px solid #fff;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: 1em;
+        outline: none;
+        color: #fff;
+        background: transparent;
+    }
+
+    .button span {
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transition-delay: 0.2s;
+        -moz-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .button:before,.button:after {
+        content: "";
+        position: absolute;
+        top: 0.67em;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: 0.4s, opacity 0.6s;
+        -moz-transition: 0.4s, opacity 0.6s;
+        -o-transition: 0.4s, opacity 0.6s;
+        transition: 0.4s, opacity 0.6s;
+    }
+
+    /* :before */
+
+    .button:before {
+        content: attr(data-hover);
+        -webkit-transform: translate(-150%, 0);
+        -moz-transform: translate(-150%, 0);
+        -ms-transform: translate(-150%, 0);
+        -o-transform: translate(-150%, 0);
+        transform: translate(-150%, 0);
+    }
+
+    /* :after */
+
+    .button:after {
+        content: attr(data-active);
+        -webkit-transform: translate(150%, 0);
+        -moz-transform: translate(150%, 0);
+        -ms-transform: translate(150%, 0);
+        -o-transform: translate(150%, 0);
+        transform: translate(150%, 0);
+    }
+
+    /* Span on :hover and :active */
+
+    .button:hover span,.button:active span {
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        -ms-transform: scale(0.3);
+        -o-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    /*
+    We show :before pseudo-element on :hover
+    and :after pseudo-element on :active
+    */
+
+    .button:hover:before,.button:active:after {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition-delay: 0.4s;
+        -moz-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+    }
+
+    /*
+    We hide :before pseudo-element on :active
+    */
+
+    .button:active:before {
+        -webkit-transform: translate(-150%, 0);
+        -moz-transform: translate(-150%, 0);
+        -ms-transform: translate(-150%, 0);
+        -o-transform: translate(-150%, 0);
+        transform: translate(-150%, 0);
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+</style>
+</head>
+<body id="index">
+    <header>
+    <nav>
+        <button class="landingPage">
+            <a href='/'> <img src="static/Pictures/logo.png" alt="Blue Moon" class="logo"> |THEGLOME</a>
+        </button>
+        <button id="mybtn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <a href ="/Mind">Mind</a>
+                <a href ="/Earth">Earth</a>
+                <a href ="/Books">Books</a>
+                <a href ="/Collection">Collection</a>
+                <a href ="/Movies">Movies</a>
+                <a href ="/Contact">Contact</a>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("mybtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+    </nav>
+    </header>
+{%  block content %}
+<button class="button" type="button" data-hover="#IBelieveInYou" data-active="I'M ACTIVE">
+    <a href="/About"><span>#YoCreoEnTi</span></a>
+</button>
+    <p>New Topics Every Month</p>
+{% endblock %}
+</body>
+</html>
