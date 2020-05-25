@@ -7,6 +7,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+    #sticky-footer{
+         color: black;
+         width: 100%;
+         bottom: 0;
+         font-size: 15px;
+         text-align: left;
+         background-color: white;
+         position: absolute;
+
+    }
     .button a {
         text-decoration: none;
     }
@@ -17,7 +28,9 @@
     }
 
     #index {
-        text-align: center;
+         text-align: center;
+         position: relative;
+         min-height: 100vh;
     }
 
     p{
@@ -63,10 +76,10 @@
         width: 100%;
         text-align: center;
         opacity: 0;
-        -webkit-transition: 0.4s, opacity 0.6s;
-        -moz-transition: 0.4s, opacity 0.6s;
-        -o-transition: 0.4s, opacity 0.6s;
-        transition: 0.4s, opacity 0.6s;
+        -webkit-transition: 0.4s, opacity 0.4s;
+        -moz-transition: 0.4s, opacity 0.4s;
+        -o-transition: 0.4s, opacity 0.4s;
+        transition: 0.4s, opacity 0.4s;
     }
 
     /* :before */
@@ -114,10 +127,10 @@
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
-        -webkit-transition-delay: 0.4s;
-        -moz-transition-delay: 0.4s;
-        -o-transition-delay: 0.4s;
-        transition-delay: 0.4s;
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
     }
 
     /*
@@ -183,5 +196,10 @@
         <a href="/About"><span>#YoCreoEnTi</span></a>
     </button>
 {% endblock %}
+{% block footer %}
+  <p id="sticky-footer">
+      <small>Copyright &copy; 2020 Ana Victoria lucio | All Rights Reserved</small>
+  </p>
+{%  endblock %}
 </body>
 </html>
