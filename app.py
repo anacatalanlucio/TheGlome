@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-app.config['USE_SESSION_FOR_NEXT'] = True
-app.secret_key = '202977e7b6cb385ae79442a0492fb179'
 
 @app.route('/')
 def Index():
