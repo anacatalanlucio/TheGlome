@@ -6,49 +6,49 @@ app = Flask(__name__)
 def Index():
     return render_template('Index.html')
 
-@app.route('/Earth')
-def Earth():
-    return render_template('Earth.html')
+@app.route('/earth')
+def earth():
+    return render_template('earth.html')
 
-@app.route('/Books')
-def Books():
-    return render_template('Books.html')
+@app.route('/books')
+def books():
+    return render_template('books.html')
 
-@app.route('/PowerNow')
+@app.route('/powernow')
 def PowerNow():
-    return render_template('PowerNow.html')
+    return render_template('powernow.html')
 
-@app.route('/Collection')
-def Collection():
-    return render_template('Collection.html')
+@app.route('/collection')
+def collection():
+    return render_template('collection.html')
 
-@app.route('/Mind')
-def Mind():
-    return render_template('Mind.html')
+@app.route('/mind')
+def mind():
+    return render_template('mind.html')
 
-@app.route('/Movies')
-def Movies():
-    return render_template('Movies.html')
+@app.route('/movies')
+def movies():
+    return render_template('movies.html')
 
-@app.route('/HighSociety')
-def HighSociety():
-    return render_template('HighSociety.html')
+@app.route('/highsociety')
+def highsociety():
+    return render_template('highsociety.html')
 
-@app.route('/Contact')
-def Contact():
-    return render_template('Contact.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
-@app.route('/About')
-def About():
-    return render_template('About.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
-@app.route('/Starlink')
-def Starlink():
-    return render_template('Starlink.html')
+@app.route('/starlink')
+def starlink():
+    return render_template('starlink.html')
 
-@app.route('/BucketList')
-def BucketList():
-    return render_template('BucketList.html')
+@app.route('/bucketlist')
+def bucketlist():
+    return render_template('buckelist.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
