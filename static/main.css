@@ -1,22 +1,17 @@
-.logo{
-	width:30px;
-	height: 30px;
-}
-
 body{
     background-color: white;
 }
 .bar1, .bar2, .bar3 {
       width: 35px;
       height: 5px;
-      background-color: black;
+      background-color:grey;
       margin: 6px 0;
       transition: 0.4s;
 }
 
 #index{
-	background-image: url("Tokyo/IMG_20170919_175109.jpg");
-	height: 1000px;
+	background-image: url("Pictures/DSC01713-1.jpg");
+    height: 800px;
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -28,7 +23,11 @@ body{
 	font-size:30px;
 	border:none;
     font-family:"Times New Roman", Times, serif;
-	cursor: pointer;
+    text-decoration: none;
+}
+.landingPage p{
+    color:black;
+    font-size: 30px;
 }
 .dropdown {
     display: inline-block;
@@ -53,7 +52,6 @@ body{
     display: none;
     position: relative;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -66,18 +64,19 @@ body{
 
 .modal-content{
     text-align: center;
-    margin: auto;
     color: white;
-    width: 10%;
 }
 
 .modal-content a {
+    margin-top: 2em;
     font-weight:lighter;
-    font-size: 25px;
+    font-size: 20px;
     color:  white;
-    padding: 20px;
+    padding: 15px;
+    text-align: center;
     text-decoration: none;
     display: block;
+    font-family:Gill Sans, sans-serif;
 }
 
 .modal-content a:hover{
@@ -301,9 +300,10 @@ h1 {
 
 span{
     cursor: pointer;
-	color: grey;
-	font-size:20px;
+	color: #A0A0A0;
+	font-size:25px;
     font-family:"Times New Roman", Times, serif;
+    font-weight: bold;
 }
 
 span:hover{
