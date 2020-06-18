@@ -3,25 +3,20 @@
 <head>
     {% block head %}
         <title> {% block title %} THEGLOME {%  endblock %}</title>
-        <link rel="icon" type="image/png" href="static/Pictures/logoT.png"/>
+        <link rel="icon" type="image/png" href="static/Pictures/DSC01713-1.jpg"/>
         <link href="static/main.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            .logo{
-            margin-top: 10px;
-            height:70px;
-            width: 70px;
-            margin-bottom: -20px;
-            }
+
             #sticky-footer{
-             color: black;
-             bottom: 0;
-             font-size: 15px;
-             text-align: left;
-             background-color: white;
-             position: relative;
-             font-family:Arial, Helvetica, sans-serif;
+                 color: black;
+                 bottom: 0;
+                 font-size: 15px;
+                 text-align: left;
+                 background-color: white;
+                 position: relative;
+                 font-family:Arial, Helvetica, sans-serif;
             }
         </style>
     {% endblock %}
@@ -30,9 +25,6 @@
 {%  block navbar %}
     <header>
     <nav>
-        <button class="landingPage">
-            <a href='/'> <img src="static/Pictures/logoT.png" alt="THEGLOME" class="logo"> | THEGLOME</a>
-        </button>
         <button id="mybtn">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -48,6 +40,9 @@
                 <a href ="/contact">CONTACT</a>
                 <span class="close">&times;</span>
             </div>
+        </div>
+        <div class="landingPage">
+            <a href='/'><img src="static/Pictures/logo11-a.jpg" alt="THEGLOME"></a>
         </div>
         <script>
             var modal = document.getElementById("myModal");
@@ -70,6 +65,7 @@
     </header>
 {% endblock %}
 {%  block content %}
+
 {% endblock %}
 {% block footer %}
   <p id="sticky-footer">

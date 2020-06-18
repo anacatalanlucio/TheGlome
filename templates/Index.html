@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
         <title> {% block title %} THEGLOME {%  endblock %}</title>
-        <link rel="icon" type="image/png" href="static/Pictures/logoT.png"/>
+        <link rel="icon" type="image/png" href="static/Pictures/DSC01713-1.jpg"/>
         <link href="static/main.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
     .button a {
         text-decoration: none;
     }
@@ -15,12 +14,11 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        margin-bottom: 20px;
     }
-
     #index {
          text-align: center;
     }
-
     p{
       background-color:transparent;
     }
@@ -28,14 +26,18 @@
         color:white;
         font-size: 150px;
         font-weight: bold;
+        text-align: center;
     }
-
+     @media screen and (max-width:700px) {
+     p.tg{
+         font-size:100px;
+     }
+    }
     /* .button */
-
     .button {
         display: inline-block;
         position: relative;
-        padding: 0.67em;
+        padding: 0.60em;
         border: 3px solid #fff;
         overflow: hidden;
         text-decoration: none;
@@ -54,6 +56,7 @@
         -moz-transition-delay: 0.2s;
         -o-transition-delay: 0.2s;
         transition-delay: 0.2s;
+
     }
 
     .button:before,.button:after {
@@ -157,9 +160,11 @@
                     <span class="close">&times;</span>
                 </div>
             </div>
-             <button class="landingPage">
-                <p>ANA CATALAN LUCIO</p><p class="tg">THEGLOME </p>
-            </button>
+            <br>
+             <div class="landingPage">
+                <p>ANA CATALAN LUCIO</p>
+                <p class="tg">THEGLOME </p>
+            </div>
             <script>
                 var modal = document.getElementById("myModal");
                 var btn = document.getElementById("mybtn");

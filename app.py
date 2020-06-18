@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def Index():
-    return render_template('Index.html')
+    return render_template('index.html')
 
 @app.route('/earth')
 def earth():
@@ -51,4 +51,4 @@ def bucketlist():
     return render_template('buckelist.html')
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(host='0.0.0.0')
