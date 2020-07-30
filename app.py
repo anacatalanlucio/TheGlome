@@ -6,9 +6,9 @@ app = Flask(__name__)
 def Index():
     return render_template('index.html')
 
-@app.route('/earth')
-def earth():
-    return render_template('earth.html')
+@app.route('/atelier')
+def atelier():
+    return render_template('atelier.html')
 
 @app.route('/books')
 def books():
@@ -22,9 +22,9 @@ def PowerNow():
 def collection():
     return render_template('collection.html')
 
-@app.route('/mind')
-def mind():
-    return render_template('mind.html')
+@app.route('/diaries')
+def diaries():
+    return render_template('diaries.html')
 
 @app.route('/movies')
 def movies():
@@ -42,13 +42,14 @@ def contact():
 def about():
     return render_template('about.html')
 
-@app.route('/starlink')
-def starlink():
-    return render_template('starlink.html')
 
-@app.route('/bucketlist')
-def bucketlist():
-    return render_template('buckelist.html')
+@app.route('/womanplan')
+def womanplan():
+    return render_template('womanplan.html')
+
+@app.route('/solteras')
+def solteras():
+    return render_template('solteras.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

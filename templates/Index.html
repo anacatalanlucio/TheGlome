@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <title> {% block title %} THEGLOME {%  endblock %}</title>
-        <link rel="icon" type="image/png" href="static/Pictures/DSC01713-1.jpg"/>
+        <link rel="icon" type="image/png" href="static/Pictures/logoG.png"/>
         <link href="static/main.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +35,7 @@
     }
     /* .button */
     .button {
+        font-family:"Times New Roman", Times, serif;
         display: inline-block;
         position: relative;
         padding: 0.60em;
@@ -151,12 +152,12 @@
             </button>
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                    <a href ="/mind">MIND</a>
-                    <a href ="/earth">EARTH</a>
+                    <a href ="/diaries">DIARIES</a>
+                    <a href ="/atelier">L'ART ATELIER</a>
                     <a href ="/books">BOOKS</a>
-                    <a href ="/collection">COLLECTION</a>
+                    <a href ="/collection">THE COLLECTION</a>
                     <a href ="/movies">MOVIES</a>
-                    <a href ="/contact">CONTACT</a>
+                    <a href ="/contact">CONTACT & MORE</a>
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -186,7 +187,7 @@
     </header>
 {%  block content %}
     <button class="button" type="button" data-hover="About This Project">
-        <a href="/about"><span> Make a Plan, and Take a Chance.</span></a>
+        <a href="/about"><span> Make a Plan, and Take a Chance</span></a>
     </button>
 {% endblock %}
 </body>
