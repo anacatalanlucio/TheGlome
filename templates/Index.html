@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
         <title> {% block title %} THEGLOME {%  endblock %}</title>
-        <link rel="icon" type="image/png" href="static/Pictures/logoG.png"/>
+        <link rel="icon" type="image/png" href="static/Pictures/logoD.jpg"/>
         <link href="static/main.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     .button a {
         text-decoration: none;
+
     }
     *,*:before,*:after {
         -webkit-box-sizing: border-box;
@@ -30,7 +31,7 @@
     }
      @media screen and (max-width:700px) {
      p.tg{
-         font-size:100px;
+         font-size:50px;
      }
     }
     /* .button */
@@ -46,6 +47,13 @@
         outline: none;
         color: #fff;
         background: transparent;
+    }
+    @media screen and (max-width:700px) {
+     .button{
+         font-size:20px;
+          height: 60%;
+          width: 60%;
+     }
     }
 
     .button span {
