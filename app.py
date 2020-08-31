@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
+import os
 
 app = Flask(__name__)
 
@@ -18,9 +19,14 @@ def books():
 def PowerNow():
     return render_template('powernow.html')
 
-@app.route('/collection')
+@app.route('/collection',)
 def collection():
-    return render_template('collection.html')
+    image_names = os.listdir("static/Collection")
+    return render_template('collection.html', image_names = image_names)
+
+@app.route('/upload/<filename>')
+def send_image(filename):
+    return send_from_directory("static/Collection", filename)
 
 @app.route('/diaries')
 def diaries():
@@ -42,7 +48,6 @@ def contact():
 def about():
     return render_template('about.html')
 
-
 @app.route('/womanplan')
 def womanplan():
     return render_template('womanplan.html')
@@ -50,6 +55,8 @@ def womanplan():
 @app.route('/solteras')
 def solteras():
     return render_template('solteras.html')
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
